@@ -5,6 +5,7 @@
 ## 🏁 Start
 
 * [📺 IDE](start/ide.md)
+* [jupyter](start/jupyter.md)
 * [🧊 Environments](start/environments/README.md)
   * [Local environments](start/environments/local-environments.md)
   * [Docker](start/environments/docker.md)

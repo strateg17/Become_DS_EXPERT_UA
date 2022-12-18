@@ -31,7 +31,7 @@ The lifecycle outlines the major stages that projects typically execute, often i
 
 Here is a visual representation of the **Team Data Science Process lifecycle**.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 The goals, tasks, and documentation artifacts for each stage of the lifecycle in TDSP are described in the [Team Data Science Process lifecycle](https://learn.microsoft.com/en-us/azure/architecture/data-science-process/lifecycle) topic. These tasks and artifacts are associated with project roles:
 
@@ -44,7 +44,7 @@ The goals, tasks, and documentation artifacts for each stage of the lifecycle in
 
 The following diagram provides a grid view of the tasks (in blue) and artifacts (in green) associated with each stage of the lifecycle (on the horizontal axis) for these roles (on the vertical axis).
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### Standardized project structure <a href="#standardized-project-structure" id="standardized-project-structure"></a>
 
@@ -57,7 +57,7 @@ We provide templates for the folder structure and required documents in standard
 * model reports to document the derived features
 * model performance metrics such as ROC curves or MSE
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Infrastructure and resources for data science projects <a href="#infrastructure-and-resources-for-data-science-projects" id="infrastructure-and-resources-for-data-science-projects"></a>
 
