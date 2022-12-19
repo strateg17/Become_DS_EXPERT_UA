@@ -6,7 +6,7 @@ description: >-
 
 # CRISP-ML(Q)
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Machine Learning Development Life Cycle Process.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Machine Learning Development Life Cycle Process.</p></figcaption></figure>
 
 Overall, the CRISP-ML(Q) process model describes six phases:
 
@@ -19,7 +19,7 @@ Overall, the CRISP-ML(Q) process model describes six phases:
 
 For each phase of the process model (see Figure 2), the quality assurance approach in CRISP-ML(Q) requires the definition of requirements and constraints (e.g., performance, data quality requirements, model robustness, etc.), instantiation of the specific tasks (e.g., ML algorithm selection, model training, etc.), specification of risks that might negatively impact the efficiency and success of the ML application (e.g., bias, overfitting, lack of reproducibility, etc.), quality assurance methods to mitigate risks when these risks need to be diminished (e.g., cross-validation, documenting process and results, etc.).
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p><a href="https://arxiv.org/pdf/2003.05155.pdf">CRISP-ML(Q)</a> approach for quality assurance for each of the six phases.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p><a href="https://arxiv.org/pdf/2003.05155.pdf">CRISP-ML(Q)</a> approach for quality assurance for each of the six phases.</p></figcaption></figure>
 
 ### Business and Data Understanding <a href="#business-and-data-understanding" id="business-and-data-understanding"></a>
 

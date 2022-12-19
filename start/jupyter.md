@@ -2,5 +2,5 @@
 description: 'TODO:'
 ---
 
-# jupyter
+# 🪐 jupyter
 

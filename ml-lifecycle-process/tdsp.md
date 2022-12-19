@@ -44,7 +44,7 @@ The goals, tasks, and documentation artifacts for each stage of the lifecycle in
 
 The following diagram provides a grid view of the tasks (in blue) and artifacts (in green) associated with each stage of the lifecycle (on the horizontal axis) for these roles (on the vertical axis).
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ### Standardized project structure <a href="#standardized-project-structure" id="standardized-project-structure"></a>
 
@@ -57,7 +57,7 @@ We provide templates for the folder structure and required documents in standard
 * model reports to document the derived features
 * model performance metrics such as ROC curves or MSE
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### Infrastructure and resources for data science projects <a href="#infrastructure-and-resources-for-data-science-projects" id="infrastructure-and-resources-for-data-science-projects"></a>
 
@@ -72,7 +72,7 @@ The analytics and storage infrastructure, where raw and processed datasets are s
 
 Here is an example of a team working on multiple projects and sharing various cloud analytics infrastructure components.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Tools and utilities for project execution <a href="#tools-and-utilities-for-project-execution" id="tools-and-utilities-for-project-execution"></a>
 

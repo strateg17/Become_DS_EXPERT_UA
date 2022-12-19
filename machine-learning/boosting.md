@@ -38,7 +38,7 @@ description: >-
 
 Бустинг і бегінг — два поширені ансамблеві методи, що підвищують точність прогнозування. Основна відмінність між ними – _метод навчання_. У випадку _**бегінгу**_ фахівці по роботі з даними підвищують точність слабких моделей, паралельно навчаючи деякі з них на різних наборах даних. _**Бустинг**_ навчає слабкі моделі послідовно.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p><a href="https://aws.amazon.com/ru/what-is/boosting/">https://aws.amazon.com/ru/what-is/boosting/</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p><a href="https://aws.amazon.com/ru/what-is/boosting/">https://aws.amazon.com/ru/what-is/boosting/</a></p></figcaption></figure>
 
 ### Як відбувається навчання при бустингу? <a href="#seo-faq-pairs-how-is-training-in-boosting-done" id="seo-faq-pairs-how-is-training-in-boosting-done"></a>
 
