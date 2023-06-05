@@ -48,4 +48,4 @@
 ## 🚀 MLOps
 
 * [Creating Separate Environments for Development](mlops/creating-separate-environments-for-development.md)
-* [TODO](mlops/todo.md)
+* [Terraform](mlops/terraform.md)
