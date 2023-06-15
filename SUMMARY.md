@@ -6,14 +6,14 @@
 
 * [📺 IDE](start/ide.md)
 * [🪐 jupyter](start/jupyter.md)
-* [🧊 Environments](start/environments/README.md)
-  * [Local environments](start/environments/local-environments.md)
-  * [Docker](start/environments/docker.md)
 * [🔀 Git](start/git/README.md)
   * [Git Basics](start/git/git-basics.md)
   * [Git Workflow](start/git/git-workflow.md)
   * [Git SSH](start/git/git-ssh.md)
   * [Git pre-commits](start/git/git-pre-commits.md)
+* [🧊 Environments](start/environments/README.md)
+  * [Local environments](start/environments/local-environments.md)
+  * [Docker](start/environments/docker.md)
 
 ## ♻ ML Lifecycle Process
 
