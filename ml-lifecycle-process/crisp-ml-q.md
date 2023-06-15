@@ -6,7 +6,7 @@ description: >-
 
 # CRISP-ML(Q)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Machine Learning Development Life Cycle Process.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Machine Learning Development Life Cycle Process.</p></figcaption></figure>
 
 В цілому процес CRISP-ML(Q) можна поділити на шість етапів:
 
@@ -23,35 +23,35 @@ description: >-
 
 ### Розуміння потреб бізнесу та даних (Business and Data Understanding) <a href="#business-and-data-understanding" id="business-and-data-understanding"></a>
 
-Developing machine learning applications starts with identifying the scope of the ML application, the success criteria, and a data quality verification. The goal of this first phase is to ensure the feasibility of the project.
+Розробка програмних застосунків машинного навчання починається з визначення обсягу ML-застосунку, критеріїв успіху та перевірки якості даних. Метою першої фази є забезпечення можливості реалізації проекту.
 
-We gather success criteria along with business, machine learning, and economic success criteria during this phase. These criteria are required to be measurable. Therefore, defining clear and measurable Key Performance Indicators (KPI) such as _“time savings per user and session”_ is required. A helpful approach is to define a [non-ML heuristic benchmark](https://learning.oreilly.com/library/view/machine-learning-design/9781098115777/ch08.html) to communicate the impact of machine learning tasks with the business stakeholders.
+У цій фазі ми збираємо критерії успіху разом з бізнес-критеріями, критеріями успішності машинного навчання та економічними критеріями. Ці критерії повинні бути вимірюваними. Тому важливо визначити чіткі та вимірювані ключові показники ефективності (KPI), такі як "економія часу на користувача і сесію". Корисним підходом є визначення не-ML евристичної оцінки, щоб передати вплив завдань машинного навчання зацікавленим сторонам бізнесу.
 
-Confirming the feasibility before setting up the ML project is a best practice in an industrial setting. Applying the [Machine Learning Canvas](https://www.louisdorard.com/machine-learning-canvas) framework would be a structured way to perform this task. The ML Canvas guides through the prediction and learning phases of the ML application. In addition, it enables all stakeholders to specify data availability, regulatory constraints, and application requirements such as robustness, scalability, explainability, and resource demand.
+Підтвердження можливості перед налаштуванням проекту з машинним навчанням є найкращою практикою в промисловому середовищі. Використання фреймворку ML Canvas є структурованим способом виконання цього завдання. ML Canvas надає керівництво по фазам передбачення та навчання ML-застосунку. Крім того, він дозволяє всім зацікавленим сторонам вказати доступність даних, регулятивні обмеження та вимоги до застосунку, такі як надійність, масштабованість, пояснюваність та вимоги до ресурсів.
 
-As data guides the process, data collection and data quality verification are essential to achieving business goals. Therefore, one crucial requirement is the documentation of the statistical properties of data and the data generating process. Similarly, data requirements should be stated and documented as well, as it becomes a foundation for data quality assurance during the operational phase of the ML project.
+Оскільки дані керують процесом, збір даних та перевірка якості даних є важливими для досягнення бізнес-цілей. Тому одним з ключових вимог є документування статистичних властивостей даних та процесу їх генерації. Аналогічно, вимоги до даних повинні бути визначені й задокументовані, оскільки вони становлять основу для забезпечення якості даних під час експлуатаційної фази проекту з машинним навчанням.
 
 ### Підготовка даних (Data Engineering \\( Data Preparation) <a href="#data-engineering-data-preparation" id="data-engineering-data-preparation"></a>
 
-The second phase of the CRISP-ML(Q) process model aims to prepare data for the following modeling phase. _Data selection, data cleaning, feature engineering,_ and _data standardization_ tasks are performed during this phase.
+Друга фаза моделі CRISP-ML(Q) спрямована на підготовку даних для наступної фази моделювання. У цій фазі виконуються завдання відбору даних, очищення даних, інженерії ознак та стандартизації даних.
 
-We identify valuable and necessary features for future model training by using either _filter methods, wrapper methods_, or _embedded methods_ for data selection. Furthermore, we select data by discarding samples that do not satisfy data quality requirements. At this point, we also might tackle the problem of unbalanced classes by applying _over-sampling_ or _under-sampling_ strategies.
+Ми визначаємо цінні та необхідні ознаки для майбутнього тренування моделі за допомогою фільтруючих методів, методів упаковки або вбудованих методів для відбору даних. Крім того, ми відбираємо дані, відкидаючи вибірки, які не відповідають вимогам до якості даних. Також, на цьому етапі ми можемо вирішувати проблему незбалансованих класів шляхом застосування стратегій перевибірки або недостатньої вибірки.
 
-The data cleaning task implies that we perform error detection and error correction steps for the available data. Adding [unit testing for data](https://ssc.io/pdf/p1993-schelter.pdf) will mitigate the risk of error propagation to the next phase. Depending on the machine learning task, we might need to perform feature engineering and data augmentation activities. For example, such methods include one-hot encoding, clustering, or discretization of continuous attributes.
+Завдання очищення даних передбачає виявлення та виправлення помилок у наявних даних. Додавання модульних тестів для даних допоможе зменшити ризик поширення помилок на наступну фазу. Залежно від задачі машинного навчання, ми можемо проводити інженерію ознак та розширення даних. Наприклад, такі методи включають one-hot кодування, кластеризацію або дискретизацію неперервних атрибутів.
 
-The data standardization task denotes the process of unifying the ML tools’ input data to avoid the risk of erroneous data. Finally, the normalization task will mitigate the risk of bias to features on larger scales. We build data and input data transformation pipelines for data pre-processing and feature creation to ensure the ML application’s reproducibility during this phase.
+Завдання стандартизації даних означає процес уніфікації вхідних даних інструментів машинного навчання для уникнення ризику помилкових даних. Нарешті, завдання нормалізації даних допоможе зменшити ризик упередженості до ознак на більшій шкалі. Ми будуємо конвейери перетворення даних та вхідних даних для попередньої обробки даних та створення ознак, щоб забезпечити відтворюваність ML-додатка під час цієї фази.
 
 ### Моделювання (Machine Learning Model Engineering)
 
-The modeling phase is the ML-specific part of the process. This phase aims to specify one or several machine learning models to be deployed in the production. The translation to the ML task depends on the business problem that we are trying to solve. Constraints and requirements from the _Business and Data Understanding_ phase will shape this phase. For example, the application domain’s [model assessment metrics](https://arxiv.org/pdf/1906.10742.pdf) might include _performance metrics, robustness, fairness, scalability, interpretability, model complexity degree,_ and _model resource demand_. We should adjust the importance of each of these metrics according to the use case.
+Фаза моделювання є специфічною для машинного навчання частиною процесу. Ця фаза спрямована на визначення однієї або кількох моделей машинного навчання, які будуть впроваджені в продукцію. Переклад до машинного навчання залежить від бізнес-проблеми, яку ми намагаємося вирішити. Обмеження та вимоги з фази Розуміння бізнесу та даних визначатимуть цю фазу. Наприклад, метрики оцінки моделі в області застосування можуть включати метрики продуктивності, стійкості, справедливості, масштабованості, інтерпретованості, ступеня складності моделі та вимог до ресурсів моделі. Ми повинні налаштувати важливість кожної з цих метрик залежно від використання.
 
-Generally, the modeling phase includes _model selection, model specialization,_ and _model training_ tasks. Additionally, depending on the application, we might use a pre-trained model, compress the model, or apply ensemble learning methods to get the final ML model.
+Загалом, фаза моделювання включає вибір моделі, спеціалізацію моделі та навчання моделі. Додатково, залежно від застосування, ми можемо використовувати попередньо навчену модель, стиснути модель або застосовувати методи ансамблю для отримання кінцевої моделі машинного навчання.
 
-One main complaint about machine learning projects is the lack of reproducibility. Therefore we should ensure that the method and the results of the modeling phase are reproducible by collecting the model training method’s metadata. Typically we collect the following metadata: algorithm, training, validation and testing data set, hyper-parameters, and runtime environment description. The result reproducibility assumes the validation of the model’s mean performance on different random seeds. Following best practices, documenting trained models increases the transparency and explainability in ML projects. A helpful framework here is the [“Model Cards Toolkit”](https://arxiv.org/pdf/1810.03993.pdf).
+Одна з основних скарг на проекти з машинного навчання - це відсутність відтворюваності. Тому ми повинні забезпечити відтворюваність методу та результатів фази моделювання, збираючи метадані процесу навчання моделі. Зазвичай ми збираємо такі метадані: алгоритм, навчальний, перевірочний та тестовий набори даних, гіперпараметри та опис середовища виконання. Відтворюваність результатів передбачає перевірку середньої продуктивності моделі за допомогою різних початкових умов. Дотримуючись найкращих практик, документування навчених моделей підвищує прозорість та пояснюваність в проектах з машинним навчанням. Корисним інструментом в цьому випадку є "Model Cards Toolkit".
 
-Many phases in ML development are iterative. Sometimes, we might need to review the business goals, KPIs, and available data from the previous steps to adjust the outcomes of the ML model results.
+Багато фаз у розробці машинного навчання є ітеративними. Іноді нам може знадобитись перегляд бізнес-цілей, KPI та доступних даних з попередніх кроків, щоб відрегулювати результати моделі машинного навчання.
 
-Finally, we package the ML workflow in a pipeline to create repeatable model training during the modeling phase.
+Нарешті, ми упаковуємо робочий процес машинного навчання в потік, щоб створити повторюваний процес навчання моделі під час фази моделювання.
 
 ### Оцінювання моделей (Evaluating Machine Learning Models) <a href="#evaluating-machine-learning-models" id="evaluating-machine-learning-models"></a>
 

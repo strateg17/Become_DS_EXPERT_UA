@@ -1,22 +1,22 @@
 ---
 description: >-
-  The Team Data Science Process (TDSP) is an agile, iterative data science
-  methodology to deliver predictive analytics solutions and intelligent
-  applications efficiently.
+  Технологічний процес команди Data Science (TDSP) - це гнучка, ітеративна
+  методологія роботи з даними, спрямована на ефективну розробку прогнозувальних
+  аналітичних рішень та інтелектуальних додатків.
 ---
 
 # TDSP
 
-### Key components of the TDSP <a href="#key-components-of-the-tdsp" id="key-components-of-the-tdsp"></a>
+### Ключові компоненти TDSP <a href="#key-components-of-the-tdsp" id="key-components-of-the-tdsp"></a>
 
-TDSP has the following key components:
+TDSP включає такі елементи:
 
 * A **data science lifecycle** definition
 * A **standardized project structure**
 * **Infrastructure and resources** recommended for data science projects
 * **Tools and utilities** recommended for project execution
 
-### Data science lifecycle
+### Життєвий цикл проекту Data science&#x20;
 
 The Team Data Science Process (TDSP) provides a lifecycle to structure the development of your data science projects. The lifecycle outlines the full steps that successful projects follow.
 
@@ -46,34 +46,32 @@ The following diagram provides a grid view of the tasks (in blue) and artifacts 
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-### Standardized project structure <a href="#standardized-project-structure" id="standardized-project-structure"></a>
+### Стандартизована структура проекту <a href="#standardized-project-structure" id="standardized-project-structure"></a>
 
-Having all projects share a directory structure and use templates for project documents makes it easy for the team members to find information about their projects. All code and documents are stored in a version control system (VCS) like Git, TFS, or Subversion to enable team collaboration. Tracking tasks and features in an agile project tracking system like Jira, Rally, and Azure DevOps allows closer tracking of the code for individual features. Such tracking also enables teams to obtain better cost estimates. TDSP recommends creating a separate repository for each project on the VCS for versioning, information security, and collaboration. The standardized structure for all projects helps build institutional knowledge across the organization.
+Мати спільну структуру каталогів для всіх проектів і використання шаблонів для документів проекту спрощує пошук інформації про проекти для членів команди. Весь код і документи зберігаються у системі контролю версій (СКВ) такій як Git, TFS або Subversion для сприяння командній співпраці. Відстеження задач і функцій у системі відстеження проектів згідно з методологією Agile, такої як Jira, Rally або Azure DevOps, дозволяє ближче відстеження коду для окремих функціональностей. Таке відстеження також дозволяє командам отримувати кращі оцінки витрат. TDSP рекомендує створювати окремий репозиторій для кожного проекту у системі контролю версій для забезпечення контролю версій, захисту інформації та співпраці. Стандартизована структура для всіх проектів допомагає накопичувати інституційний досвід в усій організації.
 
-We provide templates for the folder structure and required documents in standard locations. This folder structure organizes the files that contain code for data exploration and feature extraction, and that record model iterations. These templates make it easier for team members to understand work done by others and to add new members to teams. It is easy to view and update document templates in markdown format. Use templates to provide checklists with key questions for each project to insure that the problem is well defined and that deliverables meet the quality expected. Examples include:
+Ми надаємо шаблони для структури каталогів і необхідних документів у стандартних розташуваннях. Ця структура каталогів організовує файли, які містять код для дослідження даних і вилучення ознак, а також записи ітерацій моделей. Ці шаблони полегшують розуміння роботи, виконаної іншими членами команди, і включення нових учасників до команд. Для відображення і оновлення документів використовуйте шаблони у форматі Markdown. Використовуйте шаблони, щоб надавати чек-листи з ключовими питаннями для кожного проекту, щоб переконатися, що проблема коректно визначена і що результати відповідають очікуваній якості. Приклади включають:
 
-* a project charter to document the business problem and scope of the project
-* data reports to document the structure and statistics of the raw data
-* model reports to document the derived features
-* model performance metrics such as ROC curves or MSE
+* Шаблон постановки задачі проекту, щоб задокументувати бізнес-проблему та обсяг проекту.
+* Звіти про дані для задокументування структури та статистики вихідних даних.
+* Звіти моделі для задокументування отриманих ознак.
+* Метрики продуктивності моделі, такі як криві ROC або середньоквадратична помилка (MSE).
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-### Infrastructure and resources for data science projects <a href="#infrastructure-and-resources-for-data-science-projects" id="infrastructure-and-resources-for-data-science-projects"></a>
+### Інфраструктура data science проекту <a href="#infrastructure-and-resources-for-data-science-projects" id="infrastructure-and-resources-for-data-science-projects"></a>
 
-TDSP provides recommendations for managing shared analytics and storage infrastructure such as:
+TDSP надає рекомендації щодо управління спільною аналітичною та зберіганою інфраструктурою, такою як:
 
-* cloud file systems for storing datasets
-* databases
-* big data (SQL or Spark) clusters
-* machine learning service
+* Хмарні файлові системи для зберігання наборів даних.
+* Бази даних.
+* Кластери великих даних (SQL або Spark).
+* Сервіси машинного навчання.
 
-The analytics and storage infrastructure, where raw and processed datasets are stored, may be in the cloud or on-premises. This infrastructure enables reproducible analysis. It also avoids duplication, which may lead to inconsistencies and unnecessary infrastructure costs. Tools are provided to provision the shared resources, track them, and allow each team member to connect to those resources securely. It is also a good practice to have project members create a consistent compute environment. Different team members can then replicate and validate experiments.
-
-Here is an example of a team working on multiple projects and sharing various cloud analytics infrastructure components.
+Інфраструктура аналітики та зберігання, де зберігаються сирі та оброблені набори даних, може бути в хмарі або на власних серверах. Ця інфраструктура забезпечує відтворюваність аналізу. Вона також уникне дублювання, що може призвести до невідповідностей та непотрібних витрат на інфраструктуру. Надаються інструменти для розгортання спільних ресурсів, їх відстеження та забезпечення кожному члену команди безпечного з'єднання з цими ресурсами. Також є хорошою практикою, щоб учасники проекту створювали однорідне обчислювальне середовище. Різні члени команди можуть реплікувати та перевіряти експерименти.
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-### Tools and utilities for project execution <a href="#tools-and-utilities-for-project-execution" id="tools-and-utilities-for-project-execution"></a>
+### Інструменти реалізації <a href="#tools-and-utilities-for-project-execution" id="tools-and-utilities-for-project-execution"></a>
 
-Introducing processes in most organizations is challenging. Tools provided to implement the data science process and lifecycle help lower the barriers to and increase the consistency of their adoption. TDSP provides an initial set of tools and scripts to jump-start adoption of TDSP within a team. It also helps automate some of the common tasks in the data science lifecycle such as data exploration and baseline modeling. There is a well-defined structure provided for individuals to contribute shared tools and utilities into their team's shared code repository. These resources can then be leveraged by other projects within the team or the organization. Microsoft provides extensive tooling inside [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/) supporting both open-source (Python, R, ONNX, and common deep-learning frameworks) and also Microsoft's own tooling (AutoML).
+Впровадження процесів у більшості організацій є викликом. Інструменти, що надаються для впровадження процесу та життєвого циклу науки про дані, допомагають знизити бар'єри та підвищити послідовність їх використання. TDSP надає початковий набір інструментів і скриптів для швидкого впровадження TDSP в команді. Він також допомагає автоматизувати деякі загальні завдання у життєвому циклі науки про дані, такі як дослідження даних та базове моделювання. Існує чітка структура, яка дозволяє індивідуально внести спільні інструменти та утиліти до спільного репозиторію коду команди. Ці ресурси потім можуть бути використані іншими проектами в команді або організації. Microsoft надає широкий набір інструментів у Azure Machine Learning, що підтримують як відкритий код (Python, R, ONNX та популярні фреймворки для глибинного навчання), так і власні інструменти Microsoft (AutoML).

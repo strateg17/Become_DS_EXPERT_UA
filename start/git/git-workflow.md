@@ -35,7 +35,7 @@ description: >-
 
 Для глибокого розуміння даного підходу варто ознайомитися із статтями [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html#release-branch) та цілу документацію по методології [Trunck Based Development](https://trunkbaseddevelopment.com/branch-for-release/), яка наголошує на тому, що попередній підхід існує в ідеальному світі, а об'єднувати зміни (мерджити) доволі складно у результаті, адже чим довше розробники  працюють у своїх гілках, тим більше вони відрізняються з часом.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 _**Trunck**_ розробка близька до командного програмування — це швидкі ітерації головної гілки, щоб швидко випустити життєздатний продукт. Команда створює короткострокові розгалуження функцій, які зазвичай тривають не більше кількох днів і часто передаються безпосередньо до _**master**_ гілки.
 
