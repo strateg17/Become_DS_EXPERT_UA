@@ -7,6 +7,8 @@ description: >-
 
 # Git Basics
 
+## Git - основи
+
 Серед інструментів контролю версій Git, який спочатку був створений Лінусом Торвальдсом, вважається майже стандартом серед програмістів (хоча не єдиним, наприклад, існує також Mercurial).
 
 Існує два "варіанти" систем контролю версій: централізована та розподілена.
@@ -98,70 +100,120 @@ git clone username@host:/path/to/repository
 
 <figure><img src="https://lh5.googleusercontent.com/OjI4cr0kzqJa6rHChbsaaArXY0fiLuYzTWcAEvdfiXEY2u660hBy1pPs9xXT6cnDhBQrZoP67-JPEivspNXlTd12fkzcKiVetaOjeDV5cEztjaFrJAYf0CLMH2_mWOSqnNlwz72b_rblnTs7mn6oyGTA=s2048" alt=""><figcaption></figcaption></figure>
 
+## Основні команди
+
 Є три основних концепції, які варто запам'ятати:
 
 1. HEAD - це вказівник на останній коміт у гілці, в якій ви знаходитесь.
 2. Робочий каталог - це поточний стан вашого проекту.
 3. Індекс (також відомий як область підготовки) - це місце, куди ви переміщуєте змінені файли, щоб їх закомітити.
 
-1\) Move a file from the working directory to the staging area:
+1\) Додаємо файл у який було внесено зміни до кроку стейджингу (проміжний крок):
 
 ```
 git add <file>
 ```
 
-2\) Check that there are staged, uncommited modifications:
+2\) Перевірка чи додано файли у стейджинг:&#x20;
 
 ```
 git status
 ```
 
-\
-3\) Create a new commit (with HEAD as parent) from the staging area:
+3\) Створення нового коміту, який буде базуватися на тих файлах, які додані у стейджинг:
 
 ```
 git commit -m "Message"
 ```
 
-If you cloned, you now have a commit in your local repository which is not present in the hosted repository! You can synchronize the two as:
+Проте коміт було зроблено тільки локально і тому його потрібно додати до віддаленого репозиторію. Для синхронізації змін між локальним та віддаленим репозиторієм потрібно виконати команду:
 
 ```
 git push origin main
 ```
 
-Otherwise, you can manually add a remote repository:
+Можна також в ручну додати віддалений репозиторій:&#x20;
 
 ```
 git remote add origin <server>
 ```
 
-Similarly, you can pull any changes that was pushed to the hosted repository:
+Так само варто час від час зтягувати із віддаленого репозиторія останні зміни у локальне середовище, щоб працювати із максимально актуальною версією коду.&#x20;
 
 ```
 git pull
 ```
 
-When doing a push/pull, a number of conflicts can arise. Commonly, we can forget to pull before committing, or commits can be pushed to the remote while we are working.
+Під час виконання операцій push/pull можуть виникнути конфлікти. Часто ми можемо забути виконати pull перед комітом, або коміти можуть бути відправлені на віддалений репозиторій, поки ми працюємо.
 
-Git tries to auto-resolve most conflicts that happen in these scenarios. If this is not possible (same file has been modified twice), it asks the user to merge the modification manually and perform a final commit.\
-If the conflict arises during a push, the user needs to pull the updated repository and then resolve the conflicts. Before pulling, you can also inspect the content of the remote repository:
+Git намагається автоматично вирішувати більшість конфліктів, що виникають у таких ситуаціях. Якщо це неможливо (якщо той самий файл був змінений двічі), він просить користувача вручну об'єднати зміни і зробити остаточний коміт.
+
+Якщо конфлікт виникає під час виконання операції push, користувач повинен виконати pull для оновлення репозиторію та потім вирішити конфлікти. Перед виконанням pull ви також можете переглянути вміст віддаленого репозиторію:
 
 ```
 git remote show origin
 ```
 
-To unstage a file that has been staged (but keep the modifications in the working directory):
+Щоб відмінити підготовку до коміту для файлу, який був підготовлений до коміту (але залишити зміни в робочому каталозі), використовуйте наступну команду:
 
 ```
 git restore --staged <file>
 ```
 
-Or you can simply delete any modification and restore the previous commit:
+бо ви можете просто видалити всі зміни та відновити попередній коміт:
 
 ```
 git restore
 ```
 
-restore can be dangerous: anything committed in Git can be recovered in one way or another, but restoring a file will delete the modifications forever.
+замість `<файл>` вкажіть шлях до конкретного файлу, для якого ви хочете видалити зміни та відновити попередній коміт.
+
+Ця команда скасує всі зміни, внесені у файлі після останнього коміту та поверне файл до його стану в останньому коміті. Будьте обережні, оскільки ця дія є незворотною і ви втратите всі незбережені зміни.
+
+## Гілки у Git (Branches)
+
+Гілки є однією з найпотужніших функцій у Git.
+
+Гілка - це послідовність комітів, яка відхиляється від головної гілки (зазвичай "main"), і, можливо, в подальшому може бути об'єднана.
+
+Для машинного навчання це надзвичайно корисно, оскільки це дозволяє нам вільно експериментувати або навіть зберігати окрему модель для подальшого використання.&#x20;
+
+```
+git branch testing # створюємо нову гілку із назвою "testing"
+```
 
 \
+
+
+<figure><img src="https://lh6.googleusercontent.com/ZAAs1scZZzut3URfHdHUpInhQJkC9OsjRySOFl7Zj4a0ElKUpMQBgWIoZKqfWvujP469Piofc2incuTJp-bQVzPmBAkd7UYF_S38WwUkFXcZgecCu7l3b5JJRTvCwmoKSZY3qlWBaQmlVbu8mpjwewjV=s2048" alt=""><figcaption></figcaption></figure>
+
+```
+git checkout testing # переходимо на нову гілку для подальшої роботи
+```
+
+<figure><img src="https://lh4.googleusercontent.com/DFI_Y8SbCnLgZnISVMzVZiNFT6aQl7FautgAoj158JRoC15SJ0xMQchOqDyOtf5PjcT2Ai-OGgQrAcFz2Ktm1SYasu8SEr5hEAAbRZpobIv360UtCT0aWUYxjlZb1cOX1ClNPNADFz5NMKhY3JbpWalI=s2048" alt=""><figcaption></figcaption></figure>
+
+За допомогою комбінацій команд ми маємо змогу одразу додавати усіх змінені файли у стейджинг та одразу перенести їх у черговий коміт. Це доволі зручно, оскільки дозволяє пропустити певні команди та значно прискорити роботу із гітом.
+
+```
+git commit -a -m 'Experiment' # створюємо новий коміт та додаємо його у гілку
+```
+
+<figure><img src="https://lh3.googleusercontent.com/aSLK2Y2jlw04TNT4E8pn625XhvX6HA9pvRcj7UNDBlUfzzQ5WIWMVxUd2cJJ_OEOJGFoirL8VYcdsp-zZet-lIiim2tP4bhD90KtLjJX8DsoYjubLeQklgc3cC6a8G6ocDoYXybLMlwmiGHlrOEjKF_o=s2048" alt=""><figcaption></figcaption></figure>
+
+Після завершення усіх експериментів необхідно повернутися в основну гілку та об'єднати їх.
+
+```
+git checkout master
+git merge iss53
+```
+
+<figure><img src="https://lh6.googleusercontent.com/9kWUgNKIIAQESvWmTpvVtRCKmDlCS4e-r_4TAMbjDCxO_Hp3kkQf5oNCmgGKO4HPBBbVYQO3evRFR5zEdfuZW4CY7Hwh-UItEib5ErRoifPPcI6a80vhS0_YAxB47vr885todYYyDl6aTQkUHsZActKk=s2048" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://lh6.googleusercontent.com/Ny6EKY8KznZ1FMO3_361FE-oIi0QYsT1RFG5oBwDA15GnMXOcZSv_pzl0BL9SgYkPBAeDm4KVpSK_J1cX_9LlWXuM9wcU2UnfByiyv_M2agb86v2x7ubeUFE-9OuBg2Sek6OtuJ_b9r97_oDkRYPQXqA=s2048" alt=""><figcaption></figcaption></figure>
+
+У даній статті викладено виключно самі основи по роботі із Git. Тому для удосконалення своїх навичок рекомендується зіграти у спеціалізовано гру, яка дозволить вивчити команди та проглянути офіційний мануал із переліком усіх базових команд, посилання на які ви знайдете нижче.
+
+{% embed url="https://git-scm.com/docs" %}
+
+{% embed url="https://learngitbranching.js.org/?locale=uk" %}
