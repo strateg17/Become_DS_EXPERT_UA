@@ -17,3 +17,7 @@ description: >-
 ### Контакти
 
 TODO
+
+
+
+{% embed url="https://missing.csail.mit.edu/" %}
